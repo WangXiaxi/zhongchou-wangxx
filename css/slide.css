@@ -1,0 +1,44 @@
+.container {
+	width: 540px;
+	height: 500px;
+	overflow: hidden;
+	position: relative;
+}
+.container .list {
+	height: 500px;
+	position:absolute;
+	z-index: 0;
+}
+.container .list img {
+ 	float: left;
+}
+.container .buttons {
+	position: relative;
+	margin: auto;top:90%;
+	height: 10px;
+	width: 100px;
+	z-index: 10;
+	text-align: center;
+}
+.container .buttons span { cursor: pointer; display: inline-block;  width: 10px; height: 10px; border-radius: 50%; background: #333; margin-right: 5px;}
+.container .buttons .on {  background: orangered;}
+.container .arrow {
+	transform:scaleY(2);
+	cursor: pointer;
+	line-height: 38px; 
+	text-align: center;
+	font-size: 35px;
+    width: 36px; 
+    height: 45px; 
+    position: absolute; 
+    top:227px;
+    color: transparent;
+    transition: all .3s linear;
+}
+.container a.arrow:hover { background-color: rgba(0,0,0,.7);}
+.container:hover .arrow { z-index: 1;background-color:rgba(0,0,0,.3);
+	+background-color:none;
+	color: rgba(255, 255, 255,0.6);
+	+color:#fff;}
+.container .prev { left: 0px;}
+.container .next { right: 0px;}

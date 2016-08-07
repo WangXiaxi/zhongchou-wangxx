@@ -1,0 +1,493 @@
+body
+	min-width 1190px
+	font-family Microsoft Yahei
+.clearfloat
+	clear both
+a:hover
+	cursor pointer
+.topBig
+	height 43px
+	font-size 14px
+	border-bottom 2px solid #00cccc
+	margin auto
+.top 
+	width 1190px
+	height 40px
+	margin auto
+	position relative
+.top ul li
+	position relative
+	text-align center
+	&>a
+		display inline-block
+		width 100%
+	&>a:hover
+		color #00cccc	
+.top .leftUl li:not(:last-of-type)>a:after,
+.top .rightUl li:not(:first-of-type)>a:after
+	content ''
+	display inline-block
+	width 1px
+	height 14px
+	background-color #e6e6e6
+	position absolute
+	right 0
+	top 12px
+.top ul li:first-of-type
+	width 104px	
+.top ul li:nth-of-type(2)
+	width 153px	
+	
+.top ul li:nth-of-type(3)
+	width 125px	
+.top ul.rightUl li:nth-of-type(2)
+	width 134px	
+.top ul.rightUl li:nth-of-type(1)
+	width 129px	
+.top .leftUl li
+	float left
+	line-height 40px
+.top .rightUl li
+	float right	
+	line-height 40px 
+.top .puIcon
+	display inline-block
+	width 11px
+	height 17px
+	background-image url(../src/1.png)
+	position relative
+	top 3px
+	transition all .5s linear
+.top .rightUl .riIcon
+	display inline-block
+	width 18px
+	height 17px
+	background-image url(../src/2.png)	
+	position relative
+	top 4px
+.selectorOut
+	display none
+	overflow hidden
+	z-index 1
+	position absolute
+	top 30px
+.top .leftUl .selectorOut
+	left 13px
+.top .rightUl .selectorOut
+	left 1px
+.selector
+	width 126px
+	border 1px solid rgb(230,230,230)
+	margin auto
+	position relative
+	background-color rgb(255, 255, 255)
+	overflow hidden
+	/*display none*/
+	& a
+		font-size 12px
+		line-height 39px
+		display inline-block
+		width 100%
+		float left
+		border-bottom 1px dotted rgb(230,230,230)
+	& a:last-of-type
+		border-bottom 1px transparent	
+	& a:hover
+		background-color #00cccc
+.selector.rightSel	
+	top -120px
+.selector.leftSel
+	top -400px
+.twoBig
+	height 680px
+	position relative
+	& .bg
+		width 100%	
+		height 540px
+		position absolute
+		background-color rgb(242, 242, 242)
+		z-index -1
+	& .twoInner
+		width 1190px
+		height 680px
+		margin auto
+		padding-top 20px
+		& .leftBanner
+			width 890px
+			height 660px
+			display inline-block
+			position absolute
+			& .leftBanTop
+				height 480px
+				width 100%
+				& .leftBanTopLe
+					width 540px
+					height 500px
+					display inline-block
+					float left
+					position relative
+				& .leftBanTopRi
+					width 350px
+					height 480px
+					float left
+					& .leftBanTopRiTop
+						width 350px
+						height 250px
+						float left	
+					& .leftBanTopRiBot
+						width 350px
+						height 250px
+						float left		
+			& .leftBanBot
+				margin-top 40px 
+				height 140px
+				width 100%
+				& .data
+					height 140px
+					width 100%	
+					& .pub
+						display inline-block
+						height 140px
+						text-align center
+						width 222px
+						position relative
+						float left	
+						& .text
+							font 14px/1.5 Microsoft Yahei
+							color #999
+							margin-top 43px
+							display inline-block
+							width 222px
+						& .daNum
+							font 30px/1.5 Microsoft Yahei
+							color #666
+							display inline-block
+							width 222px	
+						& .line
+							display inline-block
+							width 1px
+							height 65px
+							background-color #00ccce
+							position absolute
+							right 0
+							top 43px
+							transform rotate(20deg)
+		& .rightBanner
+			width 290px
+			height 660px
+			display inline-block
+			float right
+			& .rightOne
+				height 78px
+				background: -webkit-linear-gradient(left,#62cce6,#41dbc0);
+				&>a
+					ont-size 28px
+					position relative
+					left 20px
+					color #FFF
+					line-height 78px
+					font-size 28px
+				& span	
+					display inline-block
+					position relative
+					top 6px
+					font-size 0
+					left 102px
+					& .pubChan
+						cursor: pointer;
+						font-family: iconfont;
+						font-style: normal;
+						display: inline-block;
+						width: 28px;
+						height: 28px;
+						line-height: 30px;
+						text-align: center;
+						background: rgba(255,255,255,.3);
+						font-size: 12px;
+						color: #4f9a95;
+						float left
+			& .rightPub
+				height 194px
+				position relative
+				& .date
+					width 110px
+					height 30px
+					text-align center
+					background-color #fe645a
+					position absolute
+					bottom 0
+					right 0
+					color #fff
+					z-index 1
+					font-size 12px
+					& span
+						line-height 30px	
+				& img
+					width 290px
+					height 194px
+					position absolute
+.threeBig
+	height 634px
+	background #c0cfdb url(https://img.alicdn.com/tps/TB1tkY2JpXXXXaQXVXXXXXXXXXX-2220-634.png)	no-repeat center center
+	& .threeInner
+		width 1190px
+		height 634px
+		margin auto
+		position relative
+		& .thrTit
+			width 100%
+			padding-top 28px
+			text-align center
+			font-size 28px
+			color #fff
+		& .hot-tag
+			width 100%
+			color #fff
+			font-size 12px
+			height 31px
+			line-height 28px
+			margin-top 18px
+			text-align center
+			&>.tag
+				display inline-block
+				font-size 12px
+				height 28px
+				padding 0 10px
+				margin-left 12px
+				border 1px solid #fff
+				border-radius 3px
+				&:hover
+					background-color #00ccce
+					border 1px solid #00ccce
+	& .threeMainInner
+		width 1210px
+		height 450px
+		position absolute
+		top 140px
+		&>a
+			display inline-block
+			float left
+			width 242px
+			height 450px
+			position relative
+			&>img
+				position absolute
+			&>.textInner
+				position absolute
+				&>.item-title
+					padding-left 18px
+					color #2a343f
+					font-size 24px
+					height 58px
+					line-height 58px
+					overflow hidden
+					width 220px
+				&>.des
+					width 150px
+					padding-left 18px
+					font-size 12px
+					color #99a5b4
+					margin-top 15px
+					line-height 18px
+					height 35px
+				&>.textPer
+					font-size 16px
+					color #828c98
+					padding-left 18px
+					margin-top 30px
+					line-height 24px
+				&>.per
+					font-size 31px
+					color #00ccce
+					padding-left 18px
+					height 40px
+					line-height 40px
+					font-family Helvetica
+					&>.divPer
+						margin-top 4
+						font-size 31px
+						color #00ccce
+						line-height 40px
+						font-family Helvetica
+.bigTit
+	width 1190px
+	height 30px
+	margin auto
+	background-image url(https://img.alicdn.com/tps/TB1xtV4JXXXXXbTXXXXXXXXXXXX-2-6.png)
+	background-repeat repeat-x
+	position relative
+	margin-top 63px
+	& .textTit
+		display inline-block
+		width 136px
+		height 30px
+		text-align center
+		line-height 30px
+		font-size 28px
+		color #333
+		position relative
+		top -14px
+		background-color #fff
+		left 527px
+	& .titExplain
+		height 10px
+		overflow visible
+		text-align center
+		position relative
+		top -10px
+		font-size 14px
+		line-height 21px
+		color #8f8f8f
+.Big
+	width 1190px
+	height 812px
+	margin auto
+	margin-top 10px
+	& .floorOne
+		height 20px
+		line-height 20px
+		position relative
+		margin-bottom 12px
+		& .num
+			font-size 14px
+			color #5a5a5a
+		& .name
+			font-size 20px
+			margin-left: 3px;
+			color #5a5a5a
+		& em.icon
+			display inline-block
+			width 16px
+			height 16px
+			background-image url(../src/3.png)
+			background-position 0px -3px
+			margin-left 4px
+			position absolute
+			top 3px
+	.Inner
+		width 1210px
+		& li
+			width 282px
+			float left
+			margin 0 20px 18px 0
+			border 1px solid #ededed
+			height 370px
+			position relative
+		& li:first-of-type
+			width 282px
+			border transparent
+			& img
+				position absolute
+				right 2px
+			& .firstLiA
+				display block
+				width 282px
+				height 370px
+				position absolute
+				& .info
+					position absolute
+					color #fff
+					left 28px
+					top 27px
+					& .name
+						font-size 24px
+						line-height 24px
+					& .money
+						font-size 14px
+						line-height 14px
+						margin-top 10px
+						& i
+							display inline-block
+							font-family arial
+					& .textClick
+						width 100px
+						height 31px
+						background #FFF
+						line-height 31px
+						text-align center
+						font-size 14px
+						margin-top 19px
+						color #78c9e3
+						& .icon
+							display inline-block
+							width 14px
+							height 14px
+							background-image url(../src/4.png)
+							background-position 0 -2px
+		& .item
+			&>a
+				display block
+				width 280px
+				height 248px
+				& .img
+					width 280px
+					height 184px
+					&>img
+						width 100%
+					&>span
+						line-height 22px
+						overflow hidden
+						display block
+						width 250px
+						font-size 15px
+						background-color #fff
+						color #2a2a2a
+						margin 11px 15px
+						height 42px
+			& .tagOut
+				width 250px
+				margin 7px auto 22px
+				height 23px
+				overflow hidden
+				& .tag			
+					display inline-block
+					height 23px
+					color #999
+					line-height 23px
+					background-color #f0f0f0
+					padding 0 8px
+					margin-right 8px
+					cursor pointer
+					font-size 12px
+			& .bar
+				width 250px
+				margin auto
+				height 6px
+				border-radius 5px
+				background-color #ededed
+				& .barPub
+					height 6px
+					display block
+					border-radius 5px
+					background-color #00cccd
+				& .full
+					width 100%
+			& .bott
+				margin-top 15px
+				& .bottPub
+					display inline-block
+					& em
+						width 100%
+						display inline-block
+						text-align center
+					& .infoNum
+						font-size 14px
+						line-height 14px
+						color #333
+					& .infoName
+						font-size 12px
+						line-height 12px
+						margin-top 5px
+						color #999
+				& .deal
+					width 58px
+					padding-left 16px
+					
+				& .dollar
+					width 144px
+				& .supp
+					width 77px
+					padding-right 22px
+					
+					
+					

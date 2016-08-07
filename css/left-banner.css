@@ -1,0 +1,14 @@
+.outPub-b{
+	position:relative;
+	width:1200px;
+	height:194px;
+}
+.pub-b{
+	position:relative;
+	width:290px;
+	height:194px;
+	float:left;
+}
+.rightPub{
+	overflow: hidden;
+}
