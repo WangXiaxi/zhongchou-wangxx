@@ -1,6 +1,5 @@
 $.fn.extend({
 	scrollFixed : function(){
-		var scro;
 		var onScro = function(offt){
 				var dex = offt-1;
 				$(".fixed").find("ul li").eq(dex).find("a").addClass("on").parent().siblings().find("a").removeClass("on");
