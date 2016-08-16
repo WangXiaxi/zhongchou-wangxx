@@ -87,9 +87,9 @@
             }
 
             next.onclick = function () {
-                if (animated) {
-                    return;
-                }
+            	if (animated) {
+            		return;
+            	}
                 if (index == len) {
                     index = 1;
                 }
@@ -100,9 +100,9 @@
                 showButton();
             }
             prev.onclick = function () {
-                if (animated) {
-                    return;
-                }
+            	if (animated) {
+            		return;
+            	}
                 if (index == 1) {
                     index = len;
                 }
