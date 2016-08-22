@@ -1,24 +1,17 @@
 (function($){
+	var animated = false;
 	$.extend({
 		threeLeft : function(offet){
+				if(animated){
+					return;
+				}
+				animated = true;
 		 		var width = parseInt($(".threeMainInner a").width());
 				var left1 = parseInt($(".threeMainInner").css("left"));
 					left1 = left1 + offet;
-					if(left1 <= -width*5){
-						left1 = -width*5;
-					}else if(left1 <= -width*4&&left1 > -width*5){
-						left1 = -width*4;
-					}else if(left1 <= -width*3&&left1 > -width*4){
-						left1 = -width*3;
-					}else if(left1 <= -width*2&&left1 > -width*3){
-						left1 = -width*2;
-					}else if(left1 <= -width&&left1 > -width*2){
-						left1 = -width;
-					}else if(left1 >-width){
-						left1 = 0;
-					}
-
-					$(".threeMainInner").css("left",left1);		
+					$(".threeMainInner").animate({left:left1},200,function(){
+						animated = false;
+					});		
 		},
 		threeAnmiate : function(){			
 			$(".threeInner .prev").click(function(){

@@ -317,16 +317,22 @@ a:hover {
   font-size: 20px;
   font-weight: 100;
 
-  background: rgba(255,255,255,0.3);
+  background: rgb(255,255,255);
+  opacity: .5;
+  filter:alpha(opacity=50);
   color: #4f9a95;
   float: left;
 }
 .twoBig .twoInner .rightBanner .rightOne span .pubChan:hover{
-   background: rgba(255,255,255,.5);
+   background: rgb(255,255,255);
+   opacity: .7;
+   filter:alpha(opacity=70);
    color: #62cce6;
 }
 .twoBig .twoInner .rightBanner .rightOne span .pubChan.curr{
-  background-color:rgba(255,255,255,0.7);
+  background: rgb(255,255,255);
+  opacity: .9;
+  filter:alpha(opacity=90);
 } 
 .twoBig .twoInner .rightBanner .rightPub {
   height: 194px;
