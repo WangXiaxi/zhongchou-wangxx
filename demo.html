@@ -18,7 +18,7 @@
 				<li><a>娱乐</a></li>
 				<li><a>农业</a></li>
 				<li><a>公益</a></li>
-				<li class="FixBoLi"><a href="#"><i class="fix-icon"></i>TOP</a></li>
+				<li class="FixBoLi"><a class="aTop"><i class="fix-icon"></i>TOP</a></li>
 			</ul>
 		</div>
 		<div class="allBig" style="width:100%;">
@@ -170,5 +170,15 @@
 		<script type="text/javascript" src="js/buy.js"></script>
 		<script type="text/javascript" src="js/abanner.js"></script>
 		<script type="text/javascript" src="js/threeslide.js"></script>
+		<script>
+			function scoTop(){
+				$(".fixed a.aTop").click(function(){
+					$("html,body").animate({
+						scrollTop:0
+					},"slow");
+				});
+			}
+			scoTop();
+		</script>
 	</body>
 </html>

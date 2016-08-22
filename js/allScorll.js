@@ -1,4 +1,5 @@
-$.fn.extend({
+(function($){
+	$.fn.extend({
 	scrollFixed : function(){
 		var onScro = function(offt){
 				var dex = offt-1;
@@ -40,3 +41,4 @@ $.fn.extend({
 });
 $(".fixed").scrollFixed();
 $(".fixed").fixedClick();
+})(jQuery);
