@@ -430,7 +430,6 @@ a:hover {
   height: 450px;  
   position:relative;
   left:0px;
-  transition: all 0.5s linear;
 }
 
 .threeBig .threeMainInner>a {
