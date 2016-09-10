@@ -59,7 +59,7 @@
 				}
 				$_this.find(".name").text(_data[i].name);
 				$_this.find(".rate").text(_data[i].rate);
-				(_data[i].rate) >= 100 ? $_this.find(".barPub").addClass("full") : $_this.find(".barPub").css("width",_data[i].rate*250/100);
+				parseInt(_data[i].rate) >= 100 ? $_this.find(".barPub").addClass("full") : $_this.find(".barPub").css("width",parseInt(_data[i].rate)*250/100);
 				$_this.find(".amount").text(_data[i].amount);
 				$_this.find(".sum").text(_data[i].sum);
 				var $tagLen = _data[i].label.length;
