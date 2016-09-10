@@ -52,9 +52,13 @@
 							);
 			for(var i = 0;i < $index;i++ ){
 				var $_this = $(this).find("li").eq(i);
-				$_this.find("img").attr("src",_data[i].image);
+				if (_data[i].image.indexOf("http") < 0) {
+					$_this.find("img").attr("src","https:" + _data[i].image);
+				}else{
+					$_this.find("img").attr("src",_data[i].image);
+				}
 				$_this.find(".name").text(_data[i].name);
-				$_this.find(".rate").text(_data[i].rate + "%");
+				$_this.find(".rate").text(_data[i].rate);
 				(_data[i].rate) >= 100 ? $_this.find(".barPub").addClass("full") : $_this.find(".barPub").css("width",_data[i].rate*250/100);
 				$_this.find(".amount").text(_data[i].amount);
 				$_this.find(".sum").text(_data[i].sum);
